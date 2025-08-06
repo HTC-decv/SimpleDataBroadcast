@@ -125,7 +125,6 @@ class ServerApp:
                     self.clients.append(conn)
                 threading.Thread(target=self.handle_client, args=(conn,addr), daemon=True).start()
                 
-                #self.threads.append(t)
             except:
                 break
 
